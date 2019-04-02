@@ -21,6 +21,15 @@ sayName('Abby');
 // Principle 2
 
 // code example for Implicit Binding
+const fiance = {
+    name: 'Abby',
+    age: 22,
+    dog: 'Piper',
+    about () {
+        return `My fiance is ${this.name}, she is ${this.age} years old, and her dog's name is ${this.dog}. `
+    }
+}
+console.log(fiance.about());
 
 // Principle 3
 
