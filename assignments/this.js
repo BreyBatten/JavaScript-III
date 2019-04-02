@@ -34,6 +34,18 @@ console.log(fiance.about());
 // Principle 3
 
 // code example for New Binding
+function Lambda(awesome) {
+    this.school = 'awesome'
+    this.sprint = 'hard'
+    this.cohort = function () {
+        console.log(`Being a student at Lambda school is ${this.school}!`)
+    }
+}
+
+const student = new Lambda ('life changing');
+student.cohort();
+console.log(student);
+
 
 // Principle 4
 
@@ -52,3 +64,5 @@ about.apply(brey, hobbies);
 // const aboutBrey = about.bind(brey, ...hobbies);
 
 // aboutBrey();
+
+// Added all three methods to gain more practice
