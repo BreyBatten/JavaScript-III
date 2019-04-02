@@ -38,3 +38,17 @@ console.log(fiance.about());
 // Principle 4
 
 // code example for Explicit Binding
+const brey = {
+    name: 'Brey'
+}
+
+const hobbies = ['workout', 'zipline', 'attend Lambda'];
+
+function about(hobbie1, hobbie2, hobbie3) {
+    console.log(`Hi! My name is ${this.name}. I like to ${hobbie1}, ${hobbie2}(and that's my job!), and I love being able to ${hobbie3}.`)
+}
+about.apply(brey, hobbies);
+// about.call(brey, hobbies[0], hobbies[1], hobbies[2]);
+// const aboutBrey = about.bind(brey, ...hobbies);
+
+// aboutBrey();
