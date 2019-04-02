@@ -1,10 +1,10 @@
 /* The for principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
-* 1. 
-* 2. 
-* 3. 
-* 4. 
+* 1. window binding is in the global scope
+* 2. implicit binding is assigning 'this' to whatever is to the left of the dot.
+* 3. new binding is a constructor function and it assigns 'this' to a new object that is created
+* 4. explicit binding is using .call, .apply, and .bind to specifically define 'this'.
 *
 * write out a code example of each explanation above
 */
